@@ -83,6 +83,7 @@ header {
 .about {
     text-align: center;
     padding: 10px;
+    height: 50vh;
     #info {
         background-color: rgb(225, 225, 225);
         padding: 10px;
@@ -90,6 +91,27 @@ header {
     #profile_picture {
         img {
             width: 50%;
+        }
+    }
+}
+
+//experience section
+.experience {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(225, 225, 225);
+    height: 50vh;
+    #technologies {
+        ul {
+            padding-top: 10px;
+            li {
+                display: inline;
+                padding: 10px;
+                img {
+                    width: 5%;
+                }
+            }
         }
     }
 }
