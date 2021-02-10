@@ -9,6 +9,7 @@ header {
   background-image: url("./Assets/background-image.png");
   background-size: 100%;
   height: 100vh;
+  background-repeat: no-repeat;
 }
 
 header .navigation {
@@ -57,7 +58,7 @@ header .navigation .navbar ul li a:hover {
 
 header .landing_page {
   color: white;
-  height: 80vh;
+  height: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,5 +99,19 @@ header .arrow i {
 
 header .arrow:hover {
   cursor: pointer;
+}
+
+.about {
+  text-align: center;
+  padding: 10px;
+}
+
+.about #info {
+  background-color: #e1e1e1;
+  padding: 10px;
+}
+
+.about #profile_picture img {
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */
