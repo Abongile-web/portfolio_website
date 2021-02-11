@@ -104,36 +104,97 @@ header .arrow:hover {
 .about {
   text-align: center;
   padding: 10px;
-  height: 50vh;
+  height: 100vh;
 }
 
-.about #info {
-  background-color: #e1e1e1;
-  padding: 10px;
+.about h1 {
+  padding-bottom: 10px;
 }
 
 .about #profile_picture img {
+  border-radius: 50%;
+  width: 25%;
+  -webkit-box-shadow: 5px 5px 5px #aeaeae;
+          box-shadow: 5px 5px 5px #aeaeae;
+}
+
+.about #context {
+  padding-top: 20px;
+}
+
+.about #context #info {
   width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .experience {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 50px;
   padding: 10px;
   background-color: #e1e1e1;
-  height: 50vh;
+  height: 100vh;
 }
 
-.experience #technologies ul {
-  padding-top: 10px;
-}
-
-.experience #technologies ul li {
-  display: inline;
+.experience p {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
   padding: 10px;
 }
 
-.experience #technologies ul li img {
+.experience .technologies ul {
+  padding: 20px;
+}
+
+.experience .technologies ul li {
+  display: inline;
+  padding: 50px;
+}
+
+.experience .technologies ul li img {
   width: 5%;
+}
+
+.projects {
+  text-align: center;
+  height: auto;
+}
+
+.projects .heading h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects .heading h1 span {
+  font-size: 10px;
+}
+
+.projects #screenshots {
+  padding-top: 30px;
+}
+
+.projects #tech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects #tech li {
+  list-style: none;
+  padding: 20px;
 }
 /*# sourceMappingURL=style.css.map */

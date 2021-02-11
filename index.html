@@ -39,29 +39,30 @@
 
     <!--About me section-->
     <section class="about">
-        <div id="context" class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-            <h1>ABOUT ME</h1>
 
+        <h1>ABOUT ME</h1>
+
+        <div id="profile_picture" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+            <img src="./Assets/profile-picture.png" alt="Picture of Abongile William">
+        </div>
+
+        <div id="context" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <p id="info">
                 I am a 21 year old ICT Multimedia student currently doing my 3rd year 
                 at the Cape Peninsula University of Technology. Here's a little story
                 about my background.
-
+                <br><br>
                 In 2018 I joined CPUT to start my qualification in ICT and during the 
                 course I started gravitating towards Multimedia, specifically design, 
                 photography and front-end development. With the skills I have gathered 
                 over the course and with my habit of being productive, I advance to 
                 pursue a career in everything Multimedia and enjoy every step of the way 
                 while doing so!
-
+                <br><br>
                 My current objective at the moment is to build projects as a front-end 
                 developer and gain as much experience as I can to ultimately work and 
                 grow with a great company that is looking for skills such as my own. 
             </p>
-        </div>
-
-        <div id="profile_picture" class="col-lg-6 col-md-12 col-sm-12 col-xs-12"> 
-            <img src="./Assets/profile-picture.png" alt="Picture of Abongile William">
         </div>
     </section>
 
@@ -76,31 +77,89 @@
             Some technologies I work with: 
         </p>
 
-        <div id="technologies">
+        <div class="technologies">
             <ul>
                 <li><img src="./Assets/html-logo.png" alt="html logo"></li>
                 <li><img src="./Assets/css-logo.png" alt="css logo"></li>
                 <li><img src="./Assets/js-logo.png" alt="javascript logo"></li>
+            </ul>
+        </div>
+        <div class="technologies">
+            <ul>
                 <li><img src="./Assets/sass-logo.png" alt="sass logo"></li>
                 <li><img src="./Assets/bootstrap-logo.png" alt="bootstrap logo"></li>
                 <li><img src="./Assets/git-logo.png" alt="git logo"></li>
+            </ul>
+        </div>
+        <div class="technologies">
+            <ul>
                 <li><img src="./Assets/photoshop-logo.png" alt="photoshop logo"></li>
                 <li><img src="./Assets/illustrator-logo.png" alt="illustrator logo"></li>
             </ul>
         </div>
+               
+                
+            
+        
     </section>
 
     <!--Projects section-->
     <section class="projects">
         <div class="heading">
-            <h1>MY PROJECTS<br><span>more coming soon..</span></h1>
+            <h1>MY PROJECTS<span>more coming soon..</span></h1>
         </div>
 
-        <div class="screenshots">
-            <img src="./Assets/kapturedbyviibez-screenshot.JPG" alt="screenshot of photography website">
+        <!---->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <div id="block">
+                    <h3>Photography website</h3>
+                    <img src="./Assets/kapturedbyviibez-screenshot.JPG" alt="screenshot of photography website" width="70%">
+                    <p>
+                        Technologies used:
+                        <ul id="tech">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>SASS</li>
+                            <li>Bootstrap</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </p>
+                </div>
+              </div>
+          
+              <div class="item">
+                <div id="block" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h3>Studio website</h3>
+                    <img src="./Assets/vmediastudios-screenshot.JPG" alt="screenshot of vmedia studios website" width="70%">
+                    <p>
+                        Technologies used:
+                        <ul id="tech">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>SASS</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </p>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
 
-            <img src="./Assets/vmediastudios-screenshot.JPG" alt="screenshot of vmedia studios website">
-        </div>
+        <!---->
     </section>
 
     <!--Contact me section-->
