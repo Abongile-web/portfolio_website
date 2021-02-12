@@ -83,7 +83,7 @@ header .navigation .navbar ul li a {
 
 header .navigation .navbar ul li a:hover {
   cursor: pointer;
-  color: grey;
+  color: #e1e1e1;
 }
 
 header .menu {
@@ -436,6 +436,7 @@ header .arrow:hover {
 }
 
 .footer i {
+  color: white;
   padding: 10px;
 }
 
