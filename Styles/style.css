@@ -5,17 +5,17 @@
           box-sizing: border-box;
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
 body {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 header {
-  background-image: url("./Assets/background-image.png");
+  background-image: url("../Assets/background-image.png");
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -32,12 +32,17 @@ header .navigation {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 10px;
   color: white;
 }
 
 header .navigation .logo h1 {
   font-size: 20px;
+  position: absolute;
+  top: 0vh;
 }
 
 header .navigation .logo h1 a {
@@ -46,6 +51,12 @@ header .navigation .logo h1 a {
 
 header .navigation .logo h1 a:hover {
   text-decoration: none;
+}
+
+header .navigation .navbar {
+  position: absolute;
+  top: 0vh;
+  right: 5px;
 }
 
 header .navigation .navbar ul {
@@ -135,15 +146,14 @@ header .arrow:hover {
 @media only screen and (max-width: 768px) {
   .navbar {
     height: 70vh;
-    background-color: black;
     width: 100%;
-    -webkit-transform: translateX(150%);
-            transform: translateX(150%);
+    -webkit-transform: translateX(110%);
+            transform: translateX(110%);
     -webkit-transition: -webkit-transform 0.8s ease-in-out;
     transition: -webkit-transform 0.8s ease-in-out;
     transition: transform 0.8s ease-in-out;
     transition: transform 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
-    overflow: hidden;
+    overflow-x: hidden;
   }
   .navbar ul {
     height: 50vh;
@@ -153,12 +163,10 @@ header .arrow:hover {
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     background-color: black;
     margin-top: 9vh;
     width: 100%;
+    overflow-x: hidden;
   }
   header .menu {
     display: block;
@@ -168,18 +176,23 @@ header .arrow:hover {
     z-index: 1;
   }
   header .navbar.show {
-    -webkit-transform: translateX(5%);
-            transform: translateX(5%);
+    -webkit-transform: translateX(60%);
+            transform: translateX(60%);
   }
   header .navigation .logo h1 a {
-    font-size: 15px;
+    font-size: 10px;
     text-align: center;
+    position: absolute;
+    top: 1vh;
   }
   header .landing_page h1 {
     font-size: 30px;
   }
   header .landing_page h1 span {
     font-size: 10px;
+  }
+  body {
+    overflow-x: hidden !important;
   }
 }
 
@@ -211,6 +224,9 @@ header .arrow:hover {
 }
 
 @media only screen and (max-width: 768px) {
+  .about {
+    height: 120vh;
+  }
   .about #profile_picture img {
     width: 80%;
   }
@@ -245,6 +261,20 @@ header .arrow:hover {
 
 .experience .technologies ul li img {
   width: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+  .experience p {
+    width: 95%;
+  }
+  .experience .technologies ul {
+    display: inline-block;
+    padding: 0;
+  }
+  .experience .technologies ul li img {
+    width: 15%;
+    padding-top: 10px;
+  }
 }
 
 .projects {
@@ -326,11 +356,22 @@ header .arrow:hover {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 768px) {
+  .projects #tech {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .contact {
-  background-image: url("./Assets/background-image.png");
-  background-size: 100%;
+  background-image: url("../Assets/background-image.png");
   height: 90vh;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   text-align: center;
   padding-top: 20px;
   color: white;
@@ -396,5 +437,11 @@ header .arrow:hover {
 
 .footer i {
   padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact form {
+    width: 95%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

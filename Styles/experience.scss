@@ -24,3 +24,23 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .experience {
+        p {
+            width: 95%;
+        }
+        .technologies {
+            ul {
+                display: inline-block;
+                padding: 0;
+                li {
+                    img {
+                        width: 15%;
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

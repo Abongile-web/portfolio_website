@@ -5,13 +5,13 @@
     box-sizing: border-box;
 }
 
-html {
+html, body {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
 body {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 @import "./home.scss";

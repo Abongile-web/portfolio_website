@@ -1,9 +1,11 @@
 //contact section
 .contact {
-    background-image: url("./Assets/background-image.png");
-    background-size: 100%;
+    background-image: url("../Assets/background-image.png");
     height: 90vh;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     text-align: center;
     padding-top: 20px;
     color: white;
@@ -57,5 +59,13 @@
     text-align: center;
     i {
         padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact {
+        form {
+            width: 95%;
+        }
     }
 }
