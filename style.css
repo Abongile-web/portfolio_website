@@ -5,11 +5,22 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 header {
   background-image: url("./Assets/background-image.png");
-  background-size: 100%;
   height: 100vh;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 header .navigation {
@@ -27,6 +38,14 @@ header .navigation {
 
 header .navigation .logo h1 {
   font-size: 20px;
+}
+
+header .navigation .logo h1 a {
+  color: white;
+}
+
+header .navigation .logo h1 a:hover {
+  text-decoration: none;
 }
 
 header .navigation .navbar ul {
@@ -54,6 +73,18 @@ header .navigation .navbar ul li a {
 header .navigation .navbar ul li a:hover {
   cursor: pointer;
   color: grey;
+}
+
+header .menu {
+  display: none;
+}
+
+header .menu button {
+  color: white;
+  background-color: black;
+  border: 0;
+  font-size: 20px;
+  outline: none;
 }
 
 header .landing_page {
@@ -99,6 +130,57 @@ header .arrow i {
 
 header .arrow:hover {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    height: 70vh;
+    background-color: black;
+    width: 100%;
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+    -webkit-transition: -webkit-transform 0.8s ease-in-out;
+    transition: -webkit-transform 0.8s ease-in-out;
+    transition: transform 0.8s ease-in-out;
+    transition: transform 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
+    overflow: hidden;
+  }
+  .navbar ul {
+    height: 50vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: black;
+    margin-top: 9vh;
+    width: 100%;
+  }
+  header .menu {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 3vh;
+    z-index: 1;
+  }
+  header .navbar.show {
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+  }
+  header .navigation .logo h1 a {
+    font-size: 15px;
+    text-align: center;
+  }
+  header .landing_page h1 {
+    font-size: 30px;
+  }
+  header .landing_page h1 span {
+    font-size: 10px;
+  }
 }
 
 .about {

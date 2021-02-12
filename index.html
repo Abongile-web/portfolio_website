@@ -16,15 +16,19 @@
     <header>
         <div class="navigation">
             <div class="logo">
-                <h1>Abongile William</h1>
+                <h1><a href="index.html">Abongile William</a></h1>
+            </div>
+
+            <div onclick="menu()" class="menu">
+                <button><i class="fa fa-bars" aria-hidden="true"></i></button>
             </div>
 
             <nav class="navbar">
                 <ul>
-                    <li><a>ABOUT</a></li>
-                    <li><a>EXPERIENCE</a></li>
-                    <li><a>PROJECTS</a></li>
-                    <li><a>CONTACT</a></li>
+                    <li><a href="#about_section">ABOUT</a></li>
+                    <li><a href="#experience_section">EXPERIENCE</a></li>
+                    <li><a href="#projects_section">PROJECTS</a></li>
+                    <li><a href="#contact_section">CONTACT</a></li>
                     <li class="resume"><a>RESUME</a></li>
                 </ul>
             </nav>
@@ -34,11 +38,11 @@
             <h1>HI, I'M ABONGILE<span>WEB DEVELOPER AND DESIGNER</span></h1>
         </div>
 
-        <a class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+        <a class="arrow" href="#about_section"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
     </header>
 
     <!--About me section-->
-    <section class="about">
+    <section class="about" id="about_section">
 
         <h1>ABOUT ME</h1>
 
@@ -67,7 +71,7 @@
     </section>
 
     <!--Experience section-->
-    <section class="experience">
+    <section class="experience" id="experience_section">
         <h1>EXPERIENCE</h1>
 
         <p>
@@ -104,7 +108,7 @@
     </section>
 
     <!--Projects section-->
-    <section class="projects">
+    <section class="projects" id="projects_section">
         <div class="heading">
             <h1>MY PROJECTS<span>more coming soon..</span></h1>
         </div>
@@ -171,7 +175,7 @@
     </section>
 
     <!--Contact me section-->
-    <section class="contact">
+    <section class="contact" id="contact_section">
         <h1>CONTACT ME <br><span></span></h1>
         <form action="https://formspree.io/f/xzbkyabg" method="POST">
             <label>
@@ -203,6 +207,6 @@
         <i class="fa fa-github-square" aria-hidden="true"></i>
     </section>
 
-    
+<script src="./app.js"></script>
 </body>
 </html>

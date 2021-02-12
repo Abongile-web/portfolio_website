@@ -1,0 +1,28 @@
+.experience {
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+  background-color: #e1e1e1;
+  height: 100vh;
+}
+
+.experience p {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+}
+
+.experience .technologies ul {
+  padding: 20px;
+}
+
+.experience .technologies ul li {
+  display: inline;
+  padding: 50px;
+}
+
+.experience .technologies ul li img {
+  width: 5%;
+}
+/*# sourceMappingURL=experience.css.map */

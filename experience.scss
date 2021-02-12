@@ -1,0 +1,26 @@
+//experience section
+.experience {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: rgb(225, 225, 225);
+    height: 100vh;
+    p {
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 10px;
+    }
+    .technologies {
+        ul {
+           padding: 20px;
+            li {
+                display: inline;
+                padding: 50px;
+                img {
+                    width: 5%;
+                }
+            }
+        }
+    }
+}

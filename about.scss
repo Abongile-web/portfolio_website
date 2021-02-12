@@ -1,0 +1,22 @@
+//about section 
+.about {
+    text-align: center;
+    padding: 10px;
+    height: 100vh;
+    h1 {
+        padding-bottom: 10px;
+    }
+    #profile_picture img {
+        border-radius: 50%;
+        width: 25%;
+        box-shadow: 5px 5px 5px rgb(174, 174, 174);
+    }
+    #context {
+        padding-top: 20px;
+        #info {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
