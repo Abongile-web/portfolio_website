@@ -1,38 +1,34 @@
-.about {
+#about_section {
   text-align: center;
   padding: 10px;
-  height: 100vh;
 }
 
-.about h1 {
+#about_section h1 {
   padding-bottom: 10px;
 }
 
-.about #profile_picture img {
+#about_section #profile_picture img {
   border-radius: 50%;
   width: 25%;
   -webkit-box-shadow: 5px 5px 5px #aeaeae;
           box-shadow: 5px 5px 5px #aeaeae;
 }
 
-.about #context {
+#about_section #context {
   padding-top: 20px;
 }
 
-.about #context #info {
+#about_section #context #info {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
 
 @media only screen and (max-width: 768px) {
-  .about {
-    height: 120vh;
-  }
-  .about #profile_picture img {
+  #about_section #profile_picture img {
     width: 80%;
   }
-  .about #context #info {
+  #about_section #context #info {
     width: 95%;
   }
 }

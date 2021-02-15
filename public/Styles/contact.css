@@ -1,6 +1,5 @@
-.contact {
+#contact_section {
   background-image: url("../Assets/background-image.png");
-  height: 90vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -8,9 +7,10 @@
   text-align: center;
   padding-top: 20px;
   color: white;
+  height: 90vh;
 }
 
-.contact form {
+#contact_section form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,26 +24,26 @@
   margin-left: auto;
 }
 
-.contact form label {
+#contact_section form label {
   text-align: left;
   padding: 20px;
 }
 
-.contact form label input {
+#contact_section form label input {
   background-color: transparent;
   border: transparent;
   border-bottom: 1px solid white;
   width: 100%;
 }
 
-.contact form label textarea {
+#contact_section form label textarea {
   background-color: transparent;
   border: transparent;
   border-bottom: 1px solid white;
   width: 100%;
 }
 
-.contact form button {
+#contact_section form button {
   border: 1px solid white;
   background-color: transparent;
   padding: 5px;
@@ -53,28 +53,27 @@
   margin-right: auto;
 }
 
-.contact form button:hover {
+#contact_section form button:hover {
   background-color: white;
   border: 1px solid white;
   color: black;
   text-decoration: none;
 }
 
-.footer {
+#footer {
   background-color: black;
   color: white;
-  height: 10vh;
   font-size: 30px;
   text-align: center;
 }
 
-.footer i {
+#footer i {
   color: white;
   padding: 10px;
 }
 
 @media only screen and (max-width: 768px) {
-  .contact form {
+  #contact_section form {
     width: 95%;
   }
 }

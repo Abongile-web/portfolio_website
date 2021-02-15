@@ -1,8 +1,7 @@
 //about section 
-.about {
+#about_section {
     text-align: center;
     padding: 10px;
-    height: 100vh;
     h1 {
         padding-bottom: 10px;
     }
@@ -22,8 +21,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .about {
-        height: 120vh;
+    #about_section {
         #profile_picture img {
             width: 80%;
         }

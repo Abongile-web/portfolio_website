@@ -1,7 +1,6 @@
 //projects section
-.projects {
+#projects_section {
     text-align: center;
-    height: auto;
     .heading h1 {
         display: flex;
         justify-content: center;
@@ -57,10 +56,15 @@
             text-decoration: none;
         }
       }
+
+      #myCarousel {
+        margin-left: -8%;
+        width: 115%;
+      }
 }
 
 @media only screen and (max-width: 768px) {
-    .projects {
+    #projects_section {
         #tech {
             flex-direction: column;
         }

@@ -1,7 +1,6 @@
 //contact section
-.contact {
+#contact_section {
     background-image: url("../Assets/background-image.png");
-    height: 90vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -9,6 +8,7 @@
     text-align: center;
     padding-top: 20px;
     color: white;
+    height: 90vh;
     form {
         display: flex;
         flex-direction: column;
@@ -51,10 +51,9 @@
 }
 
 //footer section
-.footer {
+#footer {
     background-color: black;
     color: white;
-    height: 10vh;
     font-size: 30px;
     text-align: center;
     i {
@@ -64,7 +63,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .contact {
+    #contact_section {
         form {
             width: 95%;
         }
