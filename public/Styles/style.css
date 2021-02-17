@@ -12,6 +12,7 @@ html, body {
 
 body {
   overflow: hidden;
+  font-family: 'Roboto Slab', serif;
 }
 
 header {
@@ -21,6 +22,7 @@ header {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  font-family: 'Roboto Slab', serif;
 }
 
 header .navbar {
@@ -100,6 +102,7 @@ header .arrow:hover {
 #about_section {
   text-align: center;
   padding: 10px;
+  font-family: 'Roboto Slab', serif;
 }
 
 #about_section h1 {
@@ -137,6 +140,7 @@ header .arrow:hover {
   margin-top: 50px;
   padding: 10px;
   background-color: #e1e1e1;
+  font-family: 'Roboto Slab', serif;
 }
 
 #experience_section p {
@@ -175,6 +179,7 @@ header .arrow:hover {
 
 #projects_section {
   text-align: center;
+  font-family: 'Roboto Slab', serif;
 }
 
 #projects_section .heading h1 {
@@ -275,6 +280,7 @@ header .arrow:hover {
   padding-top: 20px;
   color: white;
   height: 90vh;
+  font-family: 'Roboto Slab', serif;
 }
 
 #contact_section form {
