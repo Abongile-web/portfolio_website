@@ -5,14 +5,15 @@
           box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
 body {
   overflow: hidden;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 
 header {
@@ -22,7 +23,7 @@ header {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 
 header .navbar {
@@ -35,6 +36,10 @@ header .navbar .container-fluid .navbar-header .navbar-brand {
 
 header .navbar .container-fluid #myNavbar .nav.navbar-nav.navbar-right li a {
   color: white;
+}
+
+header .navbar .container-fluid #myNavbar .nav.navbar-nav.navbar-right li a:hover {
+  color: #d6d6d6;
 }
 
 header .navbar-header button {

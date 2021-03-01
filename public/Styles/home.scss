@@ -1,84 +1,83 @@
 //landing page section
 header {
-    background-image: url("../Assets/background-image.png");
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Roboto Slab', serif;
-    
-    //navigation
-    .navbar{
-        background-color: black;
-        .container-fluid {
-            .navbar-header {
-                .navbar-brand {
-                    color: white;
-                }
-            }
-            #myNavbar {
-                .nav.navbar-nav.navbar-right {
-                    li {
-                        a {
-                            color: white;
-                        }
-                    }
-                }
-            }
+  background-image: url("../Assets/background-image.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Roboto Slab", serif;
+
+  //navigation
+  .navbar {
+    background-color: black;
+    .container-fluid {
+      .navbar-header {
+        .navbar-brand {
+          color: white;
         }
-    }
-
-    .navbar-header {
-        button {
-            border: none;
-        }
-    }
-
-    a.navbar-brand {
-        color: white;
-    }
-
-    //landing page
-    #landing_page {
-        color: white;
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        h1 {
-            font-size: 50px;
-            display: flex;
-            flex-direction: column;
-            span {
-                font-size: 20px;
-
+      }
+      #myNavbar {
+        .nav.navbar-nav.navbar-right {
+          li {
+            a {
+              color: white;
+              &:hover {
+                color: rgb(214, 214, 214);
+              }
             }
+          }
         }
+      }
     }
+  }
 
-    .arrow {
+  .navbar-header {
+    button {
+      border: none;
+    }
+  }
+
+  a.navbar-brand {
+    color: white;
+  }
+
+  //landing page
+  #landing_page {
+    color: white;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    h1 {
+      font-size: 50px;
+      display: flex;
+      flex-direction: column;
+      span {
         font-size: 20px;
-        i {
-            color: white;
-            width: 100%;
-            text-align: center;
-        }
-        &:hover {
-            cursor: pointer;
-        }
-        
+      }
     }
-    
+  }
+
+  .arrow {
+    font-size: 20px;
+    i {
+      color: white;
+      width: 100%;
+      text-align: center;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 @media only screen and (max-width: 768px) {
-
-    header #landing_page h1 {
-        font-size: 30px;
-        span {
-            font-size: 10px;
-        }
+  header #landing_page h1 {
+    font-size: 30px;
+    span {
+      font-size: 10px;
     }
+  }
 }
