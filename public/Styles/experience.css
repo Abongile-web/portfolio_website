@@ -3,7 +3,8 @@
   margin-top: 50px;
   padding: 10px;
   background-color: #e1e1e1;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
+  padding-top: 3%;
 }
 
 #experience_section p {
@@ -13,30 +14,30 @@
   padding: 10px;
 }
 
-#experience_section .technologies ul {
-  padding: 20px;
+#experience_section .technologies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#experience_section .technologies ul li {
-  display: inline;
-  padding: 50px;
-}
-
-#experience_section .technologies ul li img {
-  width: 5%;
+#experience_section img {
+  padding: 30px;
 }
 
 @media only screen and (max-width: 768px) {
+  #experience_section {
+    padding-top: 10%;
+  }
   #experience_section p {
     width: 95%;
-  }
-  #experience_section .technologies ul {
-    display: inline-block;
-    padding: 0;
-  }
-  #experience_section .technologies ul li img {
-    width: 15%;
-    padding-top: 10px;
   }
 }
 /*# sourceMappingURL=experience.css.map */

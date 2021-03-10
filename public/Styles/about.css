@@ -1,7 +1,8 @@
 #about_section {
   text-align: center;
   padding: 10px;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
+  padding-top: 3%;
 }
 
 #about_section h1 {
@@ -26,6 +27,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  #about_section {
+    padding-top: 10%;
+  }
   #about_section #profile_picture img {
     width: 80%;
   }

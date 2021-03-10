@@ -10,6 +10,9 @@ header {
 
 header .navbar {
   background-color: black;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 header .navbar .container-fluid .navbar-header .navbar-brand {
@@ -34,7 +37,7 @@ header a.navbar-brand {
 
 header #landing_page {
   color: white;
-  height: 80%;
+  height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

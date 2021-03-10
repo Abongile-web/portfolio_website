@@ -1,46 +1,35 @@
 //experience section
 #experience_section {
-    text-align: center;
-    margin-top: 50px;
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+  background-color: rgb(225, 225, 225);
+  font-family: "Roboto Slab", serif;
+  padding-top: 3%;
+  p {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
     padding: 10px;
-    background-color: rgb(225, 225, 225);
-    font-family: 'Roboto Slab', serif;
-    p {
-        width: 50%;
-        margin-right: auto;
-        margin-left: auto;
-        padding: 10px;
-    }
-    .technologies {
-        ul {
-           padding: 20px;
-            li {
-                display: inline;
-                padding: 50px;
-                img {
-                    width: 5%;
-                }
-            }
-        }
-    }
+  }
+
+  .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    padding: 30px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    #experience_section {
-        p {
-            width: 95%;
-        }
-        .technologies {
-            ul {
-                display: inline-block;
-                padding: 0;
-                li {
-                    img {
-                        width: 15%;
-                        padding-top: 10px;
-                    }
-                }
-            }
-        }
+  #experience_section {
+    padding-top: 10%;
+    p {
+      width: 95%;
     }
+  }
 }

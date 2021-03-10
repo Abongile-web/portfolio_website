@@ -28,6 +28,9 @@ header {
 
 header .navbar {
   background-color: black;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 header .navbar .container-fluid .navbar-header .navbar-brand {
@@ -52,7 +55,7 @@ header a.navbar-brand {
 
 header #landing_page {
   color: white;
-  height: 80%;
+  height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,7 +110,8 @@ header .arrow:hover {
 #about_section {
   text-align: center;
   padding: 10px;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
+  padding-top: 3%;
 }
 
 #about_section h1 {
@@ -132,6 +136,9 @@ header .arrow:hover {
 }
 
 @media only screen and (max-width: 768px) {
+  #about_section {
+    padding-top: 10%;
+  }
   #about_section #profile_picture img {
     width: 80%;
   }
@@ -145,7 +152,8 @@ header .arrow:hover {
   margin-top: 50px;
   padding: 10px;
   background-color: #e1e1e1;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
+  padding-top: 3%;
 }
 
 #experience_section p {
@@ -155,36 +163,37 @@ header .arrow:hover {
   padding: 10px;
 }
 
-#experience_section .technologies ul {
-  padding: 20px;
+#experience_section .technologies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#experience_section .technologies ul li {
-  display: inline;
-  padding: 50px;
-}
-
-#experience_section .technologies ul li img {
-  width: 5%;
+#experience_section img {
+  padding: 30px;
 }
 
 @media only screen and (max-width: 768px) {
+  #experience_section {
+    padding-top: 10%;
+  }
   #experience_section p {
     width: 95%;
-  }
-  #experience_section .technologies ul {
-    display: inline-block;
-    padding: 0;
-  }
-  #experience_section .technologies ul li img {
-    width: 15%;
-    padding-top: 10px;
   }
 }
 
 #projects_section {
   text-align: center;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
+  padding-top: 3%;
 }
 
 #projects_section .heading h1 {
@@ -220,58 +229,41 @@ header .arrow:hover {
   padding: 20px;
 }
 
-#projects_section .image {
-  opacity: 1;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+#projects_section .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#projects_section .middle {
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+#projects_section .projects #block {
+  width: 40%;
+  margin: 20px;
+  background-color: brown;
 }
 
-#projects_section #block:hover .image {
-  opacity: 0.3;
-}
-
-#projects_section #block:hover .middle {
-  opacity: 1;
-}
-
-#projects_section .text {
+#projects_section .projects #block .block2 {
+  padding: 20px;
   background-color: #e1e1e1;
-  color: black;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-
-#projects_section .text a {
-  color: black;
-  text-decoration: none;
-}
-
-#projects_section #myCarousel {
-  margin-left: -8%;
-  width: 115%;
+  border-radius: 5%;
 }
 
 @media only screen and (max-width: 768px) {
+  #projects_section {
+    padding-top: 10%;
+  }
   #projects_section #tech {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  #projects_section .projects #block {
+    width: 100%;
   }
 }
 
@@ -285,7 +277,8 @@ header .arrow:hover {
   padding-top: 20px;
   color: white;
   height: 90vh;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
+  padding-top: 3%;
 }
 
 #contact_section form {
@@ -351,6 +344,9 @@ header .arrow:hover {
 }
 
 @media only screen and (max-width: 768px) {
+  #contact_section {
+    padding-top: 10%;
+  }
   #contact_section form {
     width: 95%;
   }

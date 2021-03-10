@@ -8,9 +8,11 @@ header {
   background-attachment: fixed;
   font-family: "Roboto Slab", serif;
 
-  //navigation
   .navbar {
     background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
     .container-fluid {
       .navbar-header {
         .navbar-brand {
@@ -45,7 +47,7 @@ header {
   //landing page
   #landing_page {
     color: white;
-    height: 80%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
