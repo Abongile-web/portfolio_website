@@ -188,6 +188,9 @@ header .arrow:hover {
   #experience_section p {
     width: 95%;
   }
+  img {
+    width: 30%;
+  }
 }
 
 #projects_section {
@@ -312,8 +315,12 @@ header .arrow:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 20px;
-  width: 30%;
+  width: 50%;
+  height: 90%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -321,6 +328,7 @@ header .arrow:hover {
 #contact_section form label {
   text-align: left;
   padding: 20px;
+  font-size: 25px;
 }
 
 #contact_section form label input {
@@ -341,7 +349,7 @@ header .arrow:hover {
   border: 1px solid white;
   background-color: transparent;
   padding: 5px;
-  font-size: 10px;
+  font-size: 20px;
   font-weight: 700;
   margin-left: auto;
   margin-right: auto;
@@ -369,9 +377,16 @@ header .arrow:hover {
 @media only screen and (max-width: 768px) {
   #contact_section {
     padding-top: 10%;
+    height: auto;
   }
   #contact_section form {
     width: 95%;
+  }
+  #contact_section form label {
+    font-size: 15px;
+  }
+  #contact_section form button {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */
