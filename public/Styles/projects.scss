@@ -28,17 +28,30 @@
     flex-wrap: wrap;
     justify-content: center;
     #block {
-      width: 40%;
+      width: 25%;
       margin: 20px;
-      background-color: brown;
-      .block2 {
-        padding: 20px;
-        background-color: rgb(225, 225, 225);
-        border-radius: 5%;
+      background-color: rgb(225, 225, 225);
+      border-radius: 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p {
+        padding: 10px;
+        width: 80%;
+        a {
+          &:hover {
+            text-decoration: none;
+            cursor: pointer;
+          }
+        }
       }
       img {
+        width: 90%;
       }
       h3 {
+      }
+      &:hover {
+        background-color: rgba(225, 225, 225, 0.3);
       }
     }
   }

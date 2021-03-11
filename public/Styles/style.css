@@ -241,15 +241,38 @@ header .arrow:hover {
 }
 
 #projects_section .projects #block {
-  width: 40%;
+  width: 25%;
   margin: 20px;
-  background-color: brown;
-}
-
-#projects_section .projects #block .block2 {
-  padding: 20px;
   background-color: #e1e1e1;
   border-radius: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects_section .projects #block p {
+  padding: 10px;
+  width: 80%;
+}
+
+#projects_section .projects #block p a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#projects_section .projects #block img {
+  width: 90%;
+}
+
+#projects_section .projects #block:hover {
+  background-color: rgba(225, 225, 225, 0.3);
 }
 
 @media only screen and (max-width: 768px) {
