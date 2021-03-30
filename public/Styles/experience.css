@@ -43,6 +43,9 @@
   #experience_section p {
     width: 95%;
   }
+  #experience_section .technologies img {
+    width: 30%;
+  }
   img {
     width: 30%;
   }
