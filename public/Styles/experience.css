@@ -28,6 +28,10 @@
           justify-content: center;
 }
 
+#experience_section .technologies img {
+  width: 10%;
+}
+
 #experience_section img {
   padding: 30px;
 }
