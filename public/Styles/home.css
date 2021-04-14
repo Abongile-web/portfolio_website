@@ -1,5 +1,6 @@
 header {
-  background-image: url("../Assets/background-image.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../Assets/desk wallpaper.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Assets/desk wallpaper.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
