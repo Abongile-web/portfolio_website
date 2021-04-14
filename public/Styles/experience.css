@@ -2,7 +2,6 @@
   text-align: center;
   margin-top: 50px;
   padding: 10px;
-  background-color: #e1e1e1;
   font-family: "Roboto Slab", serif;
   padding-top: 3%;
 }
@@ -29,7 +28,7 @@
 }
 
 #experience_section .technologies img {
-  width: 8%;
+  width: 7%;
 }
 
 #experience_section img {

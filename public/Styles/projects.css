@@ -51,7 +51,7 @@
 #projects_section .projects #block {
   width: 25%;
   margin: 20px;
-  background-color: #e1e1e1;
+  background-color: rgba(232, 232, 232, 0.674);
   border-radius: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,7 +80,7 @@
 }
 
 #projects_section .projects #block:hover {
-  background-color: rgba(225, 225, 225, 0.3);
+  background-color: white;
 }
 
 @media only screen and (max-width: 768px) {
