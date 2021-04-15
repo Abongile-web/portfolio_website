@@ -310,7 +310,7 @@ header .arrow:hover {
   text-align: center;
   padding-top: 20px;
   color: white;
-  height: 90vh;
+  min-height: 90vh;
   font-family: "Roboto Slab", serif;
   padding-top: 3%;
 }
