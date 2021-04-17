@@ -68,6 +68,8 @@ header #landing_page {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 header #landing_page h1 {
