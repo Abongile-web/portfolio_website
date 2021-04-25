@@ -53,18 +53,29 @@ header .navbar .logo {
           flex: 1;
 }
 
-header .navbar .logo img {
-  width: 40px;
-  border-radius: 50%;
-}
-
 header .navbar .logo a {
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .navbar .logo a:hover {
   text-decoration: none;
   color: #e6e6e6;
+}
+
+header .navbar .logo a img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+header .navbar .logo a p {
+  margin: 0;
+  padding: 0 5px;
 }
 
 header .navbar ul {
@@ -150,6 +161,77 @@ header .arrow:hover {
   }
   header #landing_page h1 span {
     font-size: 10px;
+  }
+  header i#menu.fa.fa-bars {
+    display: block !important;
+  }
+  .hamburger {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    position: fixed;
+    background-color: black;
+    width: 100vw;
+    height: 5vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 10px;
+    z-index: 99;
+  }
+  .hamburger img {
+    width: 20px;
+    border-radius: 50%;
+  }
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 95vh !important;
+    width: 80% !important;
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+    -webkit-transform: translateX(-100%) !important;
+            transform: translateX(-100%) !important;
+    -webkit-transition: ease-out !important;
+    transition: ease-out !important;
+    -webkit-transition: 0.4s !important;
+    transition: 0.4s !important;
+  }
+  .navbar .logo {
+    -webkit-box-flex: 0 !important;
+        -ms-flex: none !important;
+            flex: none !important;
+  }
+  .navbar .logo a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar .logo a p {
+    padding: 5px !important;
+  }
+  .navbar ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar ul li {
+    padding: 20px 0 !important;
+  }
+  .navbar_show {
+    -webkit-transform: translateX(0) !important;
+            transform: translateX(0) !important;
+    -webkit-transition: ease-in !important;
+    transition: ease-in !important;
+    -webkit-transition: 0.4s !important;
+    transition: 0.4s !important;
   }
 }
 

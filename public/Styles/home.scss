@@ -22,15 +22,21 @@ header {
     flex-wrap: wrap;
     .logo {
       flex: 1;
-      img {
-        width: 40px;
-        border-radius: 50%;
-      }
       a {
         color: white;
+        display: flex;
+        align-items: center;
         &:hover {
           text-decoration: none;
           color: rgb(230, 230, 230);
+        }
+        img {
+          width: 40px;
+          border-radius: 50%;
+        }
+        p {
+          margin: 0;
+          padding: 0 5px;
         }
       }
     }
@@ -89,10 +95,63 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
+  //navigation
+
   header #landing_page h1 {
     font-size: 30px;
     span {
       font-size: 10px;
     }
+  }
+
+  header i#menu.fa.fa-bars {
+    display: block !important;
+  }
+
+  .hamburger {
+    display: flex !important;
+    position: fixed;
+    background-color: black;
+    width: 100vw;
+    height: 5vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    z-index: 99;
+    img {
+      width: 20px;
+      border-radius: 50%;
+    }
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: 95vh !important;
+    width: 80% !important;
+    justify-content: space-around !important;
+    transform: translateX(-100%) !important;
+    transition: ease-out !important;
+    transition: 0.4s !important;
+    .logo {
+      flex: none !important;
+      a {
+        flex-direction: column;
+        p {
+          padding: 5px !important;
+        }
+      }
+    }
+    ul {
+      flex-direction: column;
+      li {
+        padding: 20px 0 !important;
+      }
+    }
+  }
+
+  .navbar_show {
+    transform: translateX(0) !important;
+    transition: ease-in !important;
+    transition: 0.4s !important;
   }
 }

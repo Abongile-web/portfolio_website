@@ -1,7 +1,7 @@
 //menu button
-function menu() {
-    document.querySelector(".navbar").classList.toggle("show");
-  }
+document.querySelector('#menu').addEventListener('click', () => {
+    document.querySelector('.navbar').classList.toggle('navbar_show');
+})
 
   //Contact form 
 $(document).ready(function () {
