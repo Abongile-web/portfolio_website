@@ -12,28 +12,62 @@ header {
 header .navbar {
   background-color: black;
   position: fixed;
-  width: 100%;
+  height: 5vh;
+  width: 100vw;
   z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
 }
 
-header .navbar .container-fluid .navbar-header .navbar-brand {
+header .navbar .logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+header .navbar .logo a {
   color: white;
 }
 
-header .navbar .container-fluid #myNavbar .nav.navbar-nav.navbar-right li a {
+header .navbar .logo a:hover {
+  text-decoration: none;
+  color: #e6e6e6;
+}
+
+header .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 10px;
+  margin: 0;
+}
+
+header .navbar ul li {
+  padding: 0 10px;
+  list-style: none;
+}
+
+header .navbar ul li a {
   color: white;
 }
 
-header .navbar .container-fluid #myNavbar .nav.navbar-nav.navbar-right li a:hover {
-  color: #b8b8b8;
-}
-
-header .navbar-header button {
-  border: none;
-}
-
-header a.navbar-brand {
-  color: white;
+header .navbar ul li a:hover {
+  text-decoration: none;
+  color: #e6e6e6;
 }
 
 header #landing_page {
