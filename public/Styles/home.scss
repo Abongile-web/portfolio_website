@@ -19,8 +19,13 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
+    flex-wrap: wrap;
     .logo {
       flex: 1;
+      img {
+        width: 40px;
+        border-radius: 50%;
+      }
       a {
         color: white;
         &:hover {
@@ -36,6 +41,7 @@ header {
       justify-content: center;
       padding: 0 10px;
       margin: 0;
+      flex-wrap: wrap;
       li {
         padding: 0 10px;
         list-style: none;
