@@ -327,7 +327,7 @@ header .arrow:hover {
 }
 
 #experience_section .technologies img {
-  width: 7%;
+  width: 140px;
 }
 
 #experience_section img {
@@ -342,7 +342,7 @@ header .arrow:hover {
     width: 95%;
   }
   #experience_section .technologies img {
-    width: 30%;
+    width: 100px;
   }
   img {
     width: 30%;
