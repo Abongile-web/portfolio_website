@@ -1,6 +1,6 @@
 header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../Assets/desk wallpaper.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Assets/desk wallpaper.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../Assets/desk wallpaper-min.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Assets/desk wallpaper-min.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -175,8 +175,9 @@ header .arrow:hover {
             flex-direction: column;
     height: 100vh !important;
     width: 80% !important;
-    -ms-flex-pack: distribute !important;
-        justify-content: space-around !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
     -webkit-transform: translateX(-100%) !important;
             transform: translateX(-100%) !important;
     -webkit-transition: ease-out !important;
@@ -188,6 +189,7 @@ header .arrow:hover {
     -webkit-box-flex: 0 !important;
         -ms-flex: none !important;
             flex: none !important;
+    padding-bottom: 40px;
   }
   .navbar .logo a {
     -webkit-box-orient: vertical;

@@ -1,7 +1,7 @@
 //landing page section
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../Assets/desk\ wallpaper.jpg");
+    url("../Assets/desk\ wallpaper-min.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -128,12 +128,13 @@ header {
     flex-direction: column;
     height: 100vh !important;
     width: 80% !important;
-    justify-content: space-around !important;
+    justify-content: center !important;
     transform: translateX(-100%) !important;
     transition: ease-out !important;
     transition: 0.4s !important;
     .logo {
       flex: none !important;
+      padding-bottom: 40px;
       a {
         flex-direction: column;
         p {
