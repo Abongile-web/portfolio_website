@@ -13,6 +13,18 @@
     margin-left: auto;
     padding: 10px;
   }
+  .skills {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .skill {
+      padding: 40px 80px;
+      width: 400px;
+      i {
+        font-size: 60px;
+      }
+    }
+  }
 
   .technologies {
     display: flex;

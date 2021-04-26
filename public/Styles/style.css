@@ -290,6 +290,25 @@ header .arrow:hover {
   padding: 10px;
 }
 
+#experience_section .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#experience_section .skills .skill {
+  padding: 40px 80px;
+  width: 400px;
+}
+
+#experience_section .skills .skill i {
+  font-size: 60px;
+}
+
 #experience_section .technologies {
   display: -webkit-box;
   display: -ms-flexbox;
