@@ -34,7 +34,9 @@
 #contact_section form label {
   text-align: left;
   padding: 20px;
-  font-size: 25px;
+  font-size: 18px;
+  font-weight: 200;
+  outline: none;
 }
 
 #contact_section form label input {
@@ -42,6 +44,9 @@
   border: transparent;
   border-bottom: 1px solid white;
   width: 100%;
+  outline: none;
+  font-weight: 100;
+  font-size: 15px;
 }
 
 #contact_section form label textarea {
@@ -49,16 +54,21 @@
   border: transparent;
   border-bottom: 1px solid white;
   width: 100%;
+  outline: none;
+  font-weight: 100;
+  font-size: 15px;
 }
 
 #contact_section form button {
   border: 1px solid white;
   background-color: transparent;
   padding: 5px;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 200;
   margin-left: auto;
   margin-right: auto;
+  -webkit-transition-duration: 267ms;
+          transition-duration: 267ms;
 }
 
 #contact_section form button:hover {

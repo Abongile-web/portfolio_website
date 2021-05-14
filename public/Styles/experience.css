@@ -33,6 +33,10 @@
   font-size: 60px;
 }
 
+#experience_section .skills .skill p {
+  width: 100%;
+}
+
 #experience_section .technologies {
   display: -webkit-box;
   display: -ms-flexbox;

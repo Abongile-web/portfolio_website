@@ -24,28 +24,37 @@
     label {
       text-align: left;
       padding: 20px;
-      font-size: 25px;
+      font-size: 18px;
+      font-weight: 200;
+      outline: none;
       input {
         background-color: transparent;
         border: transparent;
         border-bottom: 1px solid white;
         width: 100%;
+        outline: none;
+        font-weight: 100;
+        font-size: 15px;
       }
       textarea {
         background-color: transparent;
         border: transparent;
         border-bottom: 1px solid white;
         width: 100%;
+        outline: none;
+        font-weight: 100;
+        font-size: 15px;
       }
     }
     button {
       border: 1px solid white;
       background-color: transparent;
       padding: 5px;
-      font-size: 20px;
-      font-weight: 700;
+      font-size: 18px;
+      font-weight: 200;
       margin-left: auto;
       margin-right: auto;
+      transition-duration: 267ms;
       &:hover {
         background-color: white;
         border: 1px solid white;
