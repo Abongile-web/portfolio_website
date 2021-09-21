@@ -63,12 +63,13 @@
   border: 1px solid white;
   background-color: transparent;
   padding: 5px;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 200;
   margin-left: auto;
   margin-right: auto;
   -webkit-transition-duration: 267ms;
           transition-duration: 267ms;
+  padding: 15px;
 }
 
 #contact_section form button:hover {

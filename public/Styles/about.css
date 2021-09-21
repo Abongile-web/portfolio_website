@@ -3,6 +3,13 @@
   padding: 10px;
   font-family: "Roboto Slab", serif;
   padding-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #about_section h1 {
@@ -24,6 +31,30 @@
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+}
+
+#about_section .technologies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+#about_section .technologies img {
+  width: 50px;
+  margin: 10px;
+}
+
+#about_section .technologies #figma {
+  width: 40px;
 }
 
 @media only screen and (max-width: 768px) {

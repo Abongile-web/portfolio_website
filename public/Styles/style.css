@@ -242,6 +242,13 @@ header .arrow:hover {
   padding: 10px;
   font-family: "Roboto Slab", serif;
   padding-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #about_section h1 {
@@ -263,6 +270,30 @@ header .arrow:hover {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+}
+
+#about_section .technologies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+#about_section .technologies img {
+  width: 50px;
+  margin: 10px;
+}
+
+#about_section .technologies #figma {
+  width: 40px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -357,6 +388,7 @@ header .arrow:hover {
   text-align: center;
   font-family: "Roboto Slab", serif;
   padding-top: 3%;
+  margin-bottom: 40px;
 }
 
 #projects_section .heading h1 {
@@ -406,7 +438,7 @@ header .arrow:hover {
 #projects_section .projects #block {
   width: 25%;
   margin: 20px;
-  background-color: #fafafa;
+  background-color: #ebebeb;
   border-radius: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -435,7 +467,7 @@ header .arrow:hover {
 }
 
 #projects_section .projects #block:hover {
-  background-color: white;
+  background-color: whitesmoke;
 }
 
 @media only screen and (max-width: 768px) {
@@ -518,12 +550,13 @@ header .arrow:hover {
   border: 1px solid white;
   background-color: transparent;
   padding: 5px;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 200;
   margin-left: auto;
   margin-right: auto;
   -webkit-transition-duration: 267ms;
           transition-duration: 267ms;
+  padding: 15px;
 }
 
 #contact_section form button:hover {
